@@ -1,0 +1,17 @@
+{% extends "common.html" %}
+{% block body %}
+
+<p>Hey {{ name }}</p>
+
+<form action="{{ url_for('flaskform2') }}" method="post">
+
+<input type="text" name="post" placeholder="Post something wonderful?">
+
+<button>Magic!</button>
+</form>
+
+{% for post in posts %}
+<p>{{ post }}</p>
+{% endfor %}
+
+{% endblock %}

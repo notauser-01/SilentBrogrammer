@@ -1,0 +1,11 @@
+{% extends "common.html" %}
+
+{% block body %}
+Give us a name:<br>
+<form action="{{ url_for('flaskform2') }}" method="post">
+
+<input type="text" name="name" placeholder="What's your name bud?">
+
+<button>Bang!</button>
+</form>
+{% endblock %}
